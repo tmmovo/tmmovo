@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜蜜蜜ovo - Bilibili</title>
+    <!-- 引入外部CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 用于炫酷特效的JS库，比如jQuery或Animate.css等，请根据实际情况引入 -->
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/-->
+
+    <style>
+        /* 炫酷特效CSS (这里仅举例) */
+        .video-card {
+            transition: transform 0.5s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>
+        <a href="https://space.bilibili.com/1685137903?spm_id_from=333.1007.0.0">甜蜜蜜ovo</a>
+    </h1>
+    <nav>
+        <!-- 导航栏内容 -->
+        <img data-src="//i1.hdslb.com/bfs/face/68223c8484171d8194159127f5761e48bf03edf5.jpg@240w_240h_1c_1s_!web-avatar-space-header.webp" alt="" src="//i1.hdslb.com/bfs/face/68223c8484171d8194159127f5761e48bf03edf5.jpg@240w_240h_1c_1s_!web-avatar-space-header.webp">
+    </nav>
+</header>
+
+<main>
+    <h4>往期最火视频</h4>
+    <section id="video-list">
+        <div class="video-card animate__animated animate__fadeIn">
+            <a href="b23.tv/BV1vt4y1f7FB">
+                <img src="//i1.hdslb.com/bfs/archive/07f7c1aa2e4556e24adf5d790fdb802240cdd0c6.jpg@320w_200h_1c_!web-space-index-myvideo.webp" alt="科目三，但是......联欢会!" loading="lazy" onload="bmgOnLoad(this)" onerror="bmgOnError(this)" data-onload="bmgCmptOnload" data-onerror="bmgCmptOnerror">
+            </a>
+            <h2>科目三，但是......连欢会！</h2>
+        </div>
+        <!-- 注释标记的所有视频（这里仅为示例） -->
+        <div class="video-card animate__animated animate__fadeIn">
+            <a href="b32.tv/BV1KN41127eK">
+                <img src="//i2.hdslb.com/bfs/archive/30d7553fd020771cf14a9236fecc95ad77c4d751.jpg@560w_350h_1c_!web-space-index-topvideo.webp" alt="⚡我爸就是脚趾尖⚡" loading="lazy" onload="bmgOnLoad(this)" onerror="bmgOnError(this)" data-onload="bmgCmptOnload" data-onerror="bmgCmptOnerror">
+            </a>
+            <h2>⚡我爸就是脚趾尖⚡</h2>
+        </div>
+
+
+        <!-- 更多视频... -->
+    </section>
+</main>
+
+<div>
+    <div>
+      <li>
+        <a rel="nofollow" href="https://space.bilibili.com/1685137903?spm_id_from=333.1007.0.0" target="_blank">我的主页</a>
+      </li>
+<!--      <li>
+        <p rel="nofollow" href="邮箱:1708039100@qq.com" target="_blank">商业合作</p>
+      </li>
+      <li><a rel="nofollow" href="" target="_blank">商务合作</a></li> -->
+      <li><a rel="nofollow" href="--------------------未填项----------------------" target="_blank">寻求帮助</a></li>
+    </ul>
+      <ul class="footer-column-b">
+      <li><a rel="nofollow" href="http://www.bjjubao.org/" target="_blank">北京互联网违法和不良信息举报中心</a></li>
+      <li><a rel="nofollow" href="http://www.cyberpolice.cn/" target="_blank">网络110报警服务</a></li>
+      <li><a rel="nofollow" href="http://www.12377.cn/" target="_blank">中国互联网举报中心</a></li>
+      <li><a rel="nofollow" href="https://chrome.google.com/webstore/detail/csdn%E5%BC%80%E5%8F%91%E8%80%85%E5%8A%A9%E6%89%8B/kfkdboecolemdjodhmhmcibjocfopejo?hl=zh-CN" target="_blank">Chrome商店下载</a></li>
+    </ul>
+    </div>
+  </div>
+
+<!-- 用于炫酷特效的JavaScript代码 (这里仅举例) -->
+<script>
+    // 假设我们有一个动画效果类名 "animate__fadeIn"
+    document.querySelectorAll('.video-card').forEach(card => {
+        setTimeout(() => card.classList.add('animate__fadeIn'), 100 * Math.random());
+    });
+</script>
+
+</body>
+</html>
