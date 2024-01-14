@@ -9,20 +9,15 @@
             font-family: Arial, sans-serif;
         }
         .gold-line {
-            position: fixed;
-            top: 55px;
+            /*position: fixed;
             left: 0;
             right: 0;
             height: 2px;
-            background-color: gold;
+            background-color: gold; */
+			top: -18px;
+            position: relative;
+            border-top: 2px solid firebrick;
         }
-		.red-line {
-		    position: fixed;
-		    left: 0;
-		    right: 0;
-		    height: 2px;
-		    background-color: red;
-		}
         .black-section {
             background-color: black;
 			height: 55px;
@@ -45,6 +40,7 @@
 			position:relative;
 			left:0;
 			top:-16px;
+			text-decoration: none;
         }
         .hytext {
             display: inline-block;
@@ -64,7 +60,7 @@
         .blue-section {
             background-color: #00bfff;
             text-align: center;
-            padding-top: 20px;
+            padding-top: 10px;
             padding-bottom: 20px;
         }
 		.image-section {
@@ -81,12 +77,21 @@
 			justify-content: center;
 			align-items: center;
 			color: #00bfff;
+			text-decoration: none;
+		}
+		.hsp {
+			color: #00bfff;
+			font-size: 34px;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			text-decoration: none;
 		}
 		.down {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin-top: 20%;
+			margin-top: 10%;
 			color: #979797;
 		}
 		.nztgm {
@@ -102,30 +107,34 @@
 <body>
     <div class="black-section">
         <img src="1.png" alt="Profile Image" class="profile-image">
-		<h5 class="profile-text">甜蜜蜜ovo - Bilibili的网页</h5>
+		<a href="//space.bilibili.com/1685137903" class="profile-text">甜蜜蜜ovo - Bilibili的网页</a>
 		<div class="gold-line"></div>
     </div>
-    <h1 class="hytext">(｡･∀･)ﾉﾞ嗨，你来到了我的网站主页,给孩子点个赞吧qwq</h1>
+    <h1 class="hytext">(｡･∀･)ﾉﾞ嗨，你来到了我的网站主页,给我点个赞吧qwq</h1>
     <div class="red-line"></div>
-    <div class="blue-section">
-        <h4>往期最火视频</h4>
-    </div>
+    <a href="//space.bilibili.com/1685137903/video" class="hsp">
+		<h4>往期最火视频</h4>
+	</a>
     <div class="image-section">
+		<a href="//b23.tv/BV1vt4y1f7FB">
+			<div class="image">
+				<img src="2.png" alt="科目三，但是......联欢会！">
+				<h2 class="tct">科目三，但是......联欢会！</h2>
+			</div>
+		</a>
+		<a href="//b23.tv/BV1KN41127eK">
 		<div class="image">
-			<iframe src="//player.bilibili.com/player.html?aid=622975294&bvid=BV1vt4y1f7FB&cid=1385700773&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-			<h2 class="tct">科目三，但是......联欢会！</h2>
-		</div>
-		<div class="image">
-			<iframe src="//player.bilibili.com/player.html?aid=488408427&bvid=BV1KN41127eK&cid=1196033611&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+			<img src="3.png" alt="⚡我爸就是脚趾尖⚡科目三，但是......联欢会！">
 			<h2 class="tct">⚡我爸就是脚趾尖⚡</h2>
 		</div>
+		</a>
     </div>
-	<div class="gold-line"></div>
+	<div class="red-line"></div>
 	<div class="down">
 		<h2>邮箱:x1708039100@163.com|合作:office-excel|制作:甜蜜蜜ovo|制图:甜蜜蜜ovo|灵感:office-excel,灵动ai助手</h2>
 	</div>
 	<p class="nztgm">
-		<iframe src="//player.bilibili.com/player.html?aid=546403908&bvid=BV1hq4y1s7VH&cid=361820022&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+		
 		我叫你到这了吗?
 	</p>
 </body>
