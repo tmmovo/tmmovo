@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title src="1.png">甜蜜蜜ovo - Bilibili主页</title>
+    <title>甜蜜蜜ovo - Bilibili主页</title>
+    <link rel="icon" type="image/png" href="1.png">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		function lol(){
+			    // 获取B站视频播放量
+			    function getBilibiliViews() {
+			        var apiUrl = 'https://api.bilibili.com/x/web-interface/archive/stat?aid=' + videoId;
+			
+			        $.getJSON(apiUrl, function(data) {
+			            var views = data.data.view;
+			            $('#views').text('播放量：' + views);
+			        });
+			    }
+			    getBilibiliViews();
+		
+			    setInterval(function() {
+			        getBilibiliViews();
+			    },5000);
+			});
+	    </script>
     <style>
         body {
             margin: 0;
@@ -116,22 +136,50 @@
 		<h4>往期最火视频</h4>
 	</a>
     <div class="image-section">
-		<a href="//b23.tv/BV1vt4y1f7FB">
+		<a href="//b23.tv/BV1vt4y1f7FB" style="text-decoration: none;">
 			<div class="image">
 				<img src="2.png" alt="科目三，但是......联欢会！">
 				<h2 class="tct">科目三，但是......联欢会！</h2>
+				<p style="color: gray;" class="tct">2023.12.29</p>
+				<style>
+					$(document).ready(function())
+					var videoId = 'BV1vt4y1f7FB';
+					setInterval()
+				</style>
 			</div>
 		</a>
-		<a href="//b23.tv/BV1KN41127eK">
+		<a href="//b23.tv/BV1KN41127eK" style="text-decoration: none;">
 		<div class="image">
-			<img src="3.png" alt="⚡我爸就是脚趾尖⚡科目三，但是......联欢会！">
+			<img src="3.png" alt="⚡我爸就是脚趾尖⚡">
 			<h2 class="tct">⚡我爸就是脚趾尖⚡</h2>
+			<p style="color: gray;" class="tct">2023.12.29</p>
+			<style>
+				$(document).ready(function())
+				var videoId = 'BV1KN41127eK';
+				setInterval()
+			</style>
 		</div>
 		</a>
     </div>
 	<div class="red-line"></div>
 	<div class="down">
-		<h2>邮箱:x1708039100@163.com|合作:office-excel|制作:甜蜜蜜ovo|制图:甜蜜蜜ovo|灵感:office-excel,灵动ai助手</h2>
+		<a href="//mail.163.com" style="text-decoration: none;color: #979797;">
+			<h2>邮箱:x1708039100@163.com</h2>
+		</a>
+		<h2>|</h2>
+		<a href="//space.bilibili.com/1439352366" style="text-decoration: none;color: #979797;">
+			<h2>合作:office-excel</h2>
+		</a>
+		<h2>|</h2>
+		<a href="//space.bilibili.com/1685137903" style="text-decoration: none;color: #979797;">
+			<h2>制作:甜蜜蜜ovo</h2>
+		</a>
+		<h2>|</h2>
+		<a href="//space.bilibili.com/1685137903" style="text-decoration: none;color: #979797;">
+			<h2>制图:甜蜜蜜ovo</h2>
+		</a>
+		<h2>|</h2>
+		<h2>灵感:office-excel,灵动ai助手</h2>
 	</div>
 	<p class="nztgm">
 		
